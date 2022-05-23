@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="view.SubSystemController">
+   <children>
+      <ImageView fx:id="img" fitHeight="246.0" fitWidth="319.0" layoutX="10.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true" />
+      <ListView fx:id="list" layoutX="385.0" layoutY="41.0" prefHeight="214.0" prefWidth="210.0" />
+      <Button fx:id="slideshow" layoutX="454.0" layoutY="260.0" mnemonicParsing="false" onAction="#slideshowClicked" text="Slideshow" />
+      <Button fx:id="back" layoutX="17.0" layoutY="364.0" mnemonicParsing="false" onAction="#backClick" text="Back" />
+      <Button fx:id="logout" layoutX="542.0" layoutY="370.0" mnemonicParsing="false" onAction="#logClick" text="Logout" />
+      <Button fx:id="quit" layoutX="552.0" layoutY="4.0" mnemonicParsing="false" onAction="#quitClicked" text="Quit" />
+      <VBox layoutX="109.0" layoutY="257.0" prefHeight="88.0" prefWidth="108.0">
+         <children>
+            <Label fx:id="locationLabel" />
+
+            <Label fx:id="captionLabel"/>
+            <Label fx:id="dateLabel" />
+            <Label fx:id="personLabel" />
+         </children>
+      </VBox>
+      <VBox layoutX="14.0" layoutY="256.0" prefHeight="107.0" prefWidth="82.0">
+         <children>
+            <Label text="Location Tag :" />
+            <Label text="Caption :" />
+            <Label text="Date :" />
+            <Label text="Person Tag :" />
+         </children>
+      </VBox>
+      <HBox layoutX="17.0" layoutY="331.0" prefHeight="26.0" prefWidth="258.0">
+         <children>
+            <Button fx:id="addTag" mnemonicParsing="false" onAction="#addT" text="Add Tag" />
+            <Button fx:id="delTag" mnemonicParsing="false" onAction="#deleteT" prefWidth="73.0" text="Delete Tag" />
+            <Button fx:id="addCap" mnemonicParsing="false" onAction="#addC" text="Add Cap" />
+            <Button fx:id="editCap" mnemonicParsing="false" onAction="#editC" text="Edit Cap" />
+         </children>
+      </HBox>
+      <HBox layoutX="408.0" layoutY="298.0" prefHeight="34.0" prefWidth="164.0">
+         <children>
+            <Button fx:id="addPhoto" mnemonicParsing="false" onAction="#addPH" text="Add Photo" />
+            <Button fx:id="delPhoto" mnemonicParsing="false" onAction="#deletePH" text="Delete Photo" />
+         </children>
+      </HBox>
+      <HBox layoutX="406.0" layoutY="330.0" prefHeight="34.0" prefWidth="164.0">
+         <children>
+            <Button fx:id="movePhoto" mnemonicParsing="false" onAction="#movePH" text="Move Photo" />
+            <Button fx:id="copyPhoto" mnemonicParsing="false" onAction="#CopyPH" text="Copy Photo" />
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
